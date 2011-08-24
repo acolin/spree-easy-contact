@@ -10,12 +10,20 @@
        <%= f.collection_select :topic_id, @topics, :id, :name %>
     </div>
     <div class="field">
-      <%= f.label :name, t("name") %><br />
-      <%= f.text_field :name %>
+      <%= f.label :first_name, t("first_name") %><br />
+      <%= f.text_field :first_name %>
+    </div>
+    <div class="field">
+      <%= f.label :last_name, t("last_name") %><br />
+      <%= f.text_field :last_name %>
     </div>
     <div class="field">
       <%= f.label :email, t("email") %><br />
       <%= f.text_field :email %>
+    </div>
+    <div class="field">
+      <%= f.label :phone, t("phone") %><br />
+      <%= f.text_field :phone %>
     </div>
     <div class="field">
       <%= f.label :order_number, t("order_number") %> (<%= t("optionnal") %>)<br />

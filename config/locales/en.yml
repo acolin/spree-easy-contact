@@ -1,8 +1,10 @@
 en:
   contacts: Contacts
   contact_us: Contact us
-  name: Name
+  first_name: First Name
+  last_name: Last Name
   email: Email
+  phone: Phone
   sent: Sent
   view: View
   message: Message
@@ -13,9 +15,9 @@ en:
   contact_list: Contacts list
   send_message: Send message
   message_sended: Message sended
-  topics: Contact Form Topic
-  topic: Topic
-  topics_description: "Setup topics for the contact form, choose wich email should be routed to"
-  new_topic: Add a topic
+  topics: Contact Form Subject
+  topic: Subject
+  topics_description: "Setup subjects for the contact form, choose wich email should be routed to"
+  new_topic: Add a subject
   from: from
   message_from: Message from
