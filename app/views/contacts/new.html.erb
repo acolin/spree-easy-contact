@@ -5,6 +5,7 @@
   <h2><%= t("contact_us") %></h2>
   <%= hook :contact do %>
   <%= render "shared/error_messages", :target => @contact %>
+	<div id="contact-us-modal" class="reveal-modal clearfix" style="visibility: visible; top: 100px; opacity: 1; ">
   <%= form_for(@contact, :html => {:honeypot => true}) do |f| %>
     <%= hook :contact_inside_form do %>
     <div class="form-row">
@@ -42,5 +43,6 @@
 		</div>
     <% end %>
   <% end %>
+	</div>
   <% end %>
 </div>
