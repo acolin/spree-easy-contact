@@ -4,7 +4,7 @@
 
 <% @body_id = 'contact_us' %>
 
-<div id="contact-us-modal" class="reveal-modal clearfix" style="visibility: visible; top: 100px; opacity: 1;">
+<div id="contact-us-modal" class="reveal-modal clearfix">
   <h2><%= t("contact_us") %></h2>
   <%= hook :contact do %>
   <%= render "shared/error_messages", :target => @contact %>
