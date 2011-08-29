@@ -1,0 +1,15 @@
+<% unless @contact_form.valid? %>
+    $("#contact-us-modal").html("<%= escape_javascript(render :partial => "form") %>");
+<% else %>
+		$("#contact-us-modal").html("<%= escape_javascript(render :partial => "form") %>");
+		
+		$(':input','#contact-us-modal')
+		 .not(':button, :submit, :reset, :hidden')
+		 .val('');
+		
+	  $.notifyBar({ 
+			cls: "success", 
+			delay: 5000,
+			html: "<%= t('message_sent')%>"
+		});
+<% end  %>

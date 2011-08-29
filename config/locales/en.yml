@@ -10,11 +10,11 @@ en:
   message: Message
   order_number: Order number
   optionnal: optional
-  name_and_mail: Name and mail
+  name_and_mail: Personal info
   contact_details: Contact details
   contact_list: Contacts list
   send_message: Send message
-  message_sended: Message sended
+  message_sent: Congrats your Message was sent, we will contact you briefly
   topics: Contact Form Subject
   topic: Subject
   topics_description: "Setup subjects for the contact form, choose wich email should be routed to"
