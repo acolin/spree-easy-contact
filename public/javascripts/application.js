@@ -13,5 +13,3 @@ $('#contact-us').click(function(event) {
 		});
 	});
 });
-
-	
