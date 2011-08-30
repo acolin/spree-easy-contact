@@ -1,14 +1,9 @@
-<% @contact = Contact.new %>
-<% @topics = Topic.all %>
 <a href="#" id="contact-us" data-reveal-id="contact-us-modal">Contact-Us</a>
-
-<% @body_id = 'contact_us' %>
-
 <div id="contact-us-modal" class="reveal-modal clearfix">
   <h2><%= t("contact_us") %></h2>
   <%= hook :contact do %>
   <%= render "shared/error_messages", :target => @contact %>
-  <%= form_for(@contact, :html => {:honeypot => true}) do |f| %>
+  <%= form_for(@contact, :remote => true, :html => {:honeypot => true}) do |f| %>
     <%= hook :contact_inside_form do %>
     <div class="form-row">
       <%= f.label :first_name, t("first_name") %><br />
@@ -46,5 +41,4 @@
     <% end %>
   <% end %>
 	</div>
-  <% end %>
 </div>
