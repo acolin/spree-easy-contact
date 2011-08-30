@@ -47,8 +47,22 @@
 		text-shadow: 0 -1px 1px rbga(0,0,0,.6);
 		font-weight: bold;
 		cursor: pointer;
-		} 
-	/*
+		}
+		
+/* Forms */
+
+input[type="text"],input[type="password"],textarea {
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+    border: 1px solid #cccccc;
+    padding: 4px 5px;
+}
+
+div.form-row {
+    margin-bottom: 14px;
+} 
+/*
 		
 	NOTES
 	
