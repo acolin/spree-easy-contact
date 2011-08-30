@@ -3,7 +3,7 @@
 $('#contact-us').click(function(event) {
 	$.get("/contacts/new.js", function(data) {
 		// Show Spin while contact form is loading
-		$('#contact-us-modal').spin();
+		$(this).spin();
 
 		// When image finishes loading, remove the spinner and show contact form
 		$('#contact-us-modal').load(function (){
