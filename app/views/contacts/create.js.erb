@@ -1,7 +1,7 @@
 <% unless @contact.valid? %>
-    $("#contact-us-modal").html("<%= escape_javascript(render :partial => "form") %>");
+    $("#contact-us-modal").html("<%= escape_javascript(render :partial => "new") %>");
 <% else %>
-		$("#contact-us-modal").html("<%= escape_javascript(render :partial => "form") %>");
+		$("#contact-us-modal").html("<%= escape_javascript(render :partial => "new") %>");
 		
 		$(':input','#contact-us-modal')
 		 .not(':button, :submit, :reset, :hidden')
