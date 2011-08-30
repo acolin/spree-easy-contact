@@ -1,4 +1,6 @@
   <h2><%= t("contact_us") %></h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	
   <%= render "shared/error_messages", :target => @contact %>
   <%= form_for(@contact, :remote => true, :html => {:honeypot => true}) do |f| %>
     <div class="form-row">
@@ -35,4 +37,5 @@
 			<%= f.submit t("send_message"), :class => "submit-button",  :value => "send" %>
 		</div>
     <% end %>
+		<a href="#" class="close-reveal-modal">x</a>
 	</div>
