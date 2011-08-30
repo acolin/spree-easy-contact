@@ -1,7 +1,7 @@
 //Loads the contact us form via an ajax request from a link with attribute load_contact_us=path_to_contact_us_form
 
-$('#contact_us').click(function(event) {
-	$.get("", function(data) {
+$('#contact-us').click(function(event) {
+	$.get("/contacts/new", function(data) {
 		// Show Spin while contact form is loading
 		$('#contact-us-modal').spin();
 
@@ -10,7 +10,6 @@ $('#contact_us').click(function(event) {
 			$(this).find("div:first").remove();	
 			$(this).fadeIn("slow");
 		});
-	
 });
 
 	
