@@ -4,7 +4,7 @@ class SpreeEasyContactHooks < Spree::ThemeSupport::HookListener
     %(<%= tab(:contacts) %>)
   end
   
-  insert_after :inside_head, 'contacts/new'
+  insert_after :inside_head, 'contacts/contact_us'
   
   insert_after :inside_head, 'contacts/content_for_head'
   
