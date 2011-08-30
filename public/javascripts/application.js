@@ -10,6 +10,7 @@ $('#contact-us').click(function(event) {
 			$(this).find("div:first").remove();	
 			$(this).fadeIn("slow");
 		});
+	});
 });
 
 	
