@@ -1,4 +1,4 @@
-<% unless @contact_form.valid? %>
+<% unless @contact.valid? %>
     $("#contact-us-modal").html("<%= escape_javascript(render :partial => "form") %>");
 <% else %>
 		$("#contact-us-modal").html("<%= escape_javascript(render :partial => "form") %>");
