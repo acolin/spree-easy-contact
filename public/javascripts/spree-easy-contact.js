@@ -2,7 +2,6 @@
 $(document).ready(function() {	
 	$('#contact-us-modal').spin();
 	//Load via ajax the contact form in html
-	$.get("/contacts/new.js", function(data) {
-			$('#contact-us-modal').empty();
+	$.get("/contacts/new.js", function() {
 	});
 });
