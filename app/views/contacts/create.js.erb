@@ -1,7 +1,7 @@
 <% unless @contact.valid? %>
     $("#contact-us-modal").html("<%= escape_javascript(render :partial => "form") %>");
 <% else %>
-		$("#contact-us-modal").('reveal:close')
+		$("#contact-us-modal").('reveal:close');
 		$("#contact-us-modal").html("<%= escape_javascript(render :partial => "form") %>");
 		
 		$(':input','#contact-us-modal')
