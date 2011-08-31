@@ -4,6 +4,6 @@ $(document).ready(function() {
 	//Load via ajax the contact form in html
 	$.get("/contacts/new", function(data) {
 			$('#contact-us-modal').empty();
-			$('#contact-us-modal').append(data);
+			$('#contact-us-modal').html(data);
 	});
 });
