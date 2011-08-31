@@ -29,7 +29,7 @@
   </div>
 
   <div class="form-row">
-    <%= f.label :order_number, t("order_number") %> (<%= t("optionnal") %>)<br />
+    <%= f.label :order_number, t("order_number") %> (<%= t("optional") %>)<br />
     <%= f.text_field :order_number %>
   </div>
   <div id="textarea-row">
@@ -38,7 +38,7 @@
 		<%= @contact.errors.on(:message) unless @contact.errors.on(:message).nil? %>
   </div>
   <div class="form-action">
-		<%= f.submit t("send_message"), :disable_with => "Sending..." ,:class => "submit-button",  :value => "send" %>
+		<%= f.submit t("send_message"), :disable_with => t("sending") ,:class => "submit-button",  :value => "send" %>
 	</div>
   <% end %>
 	<a href="#" class="close-reveal-modal">x</a>

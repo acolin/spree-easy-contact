@@ -15,6 +15,7 @@ en:
   contact_list: Contacts list
   send_message: Send message
   message_sent: Congrats your Message was sent, we will contact you briefly
+  sending: Sending...
   topics: Contact Form Subject
   topic: Subject
   topics_description: "Setup subjects for the contact form, choose wich email should be routed to"
