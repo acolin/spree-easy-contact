@@ -8,8 +8,8 @@ $('#contact-us').click(function(event) {
 	//Load via ajax the contact form in html
 	$.get("/contacts/new", function(data) {
 		// When image finishes loading, remove the spinner and show contact form
-			$(this).empty();	
-			$(this).append(data);
-			$(this).fadeIn("slow");
+			$('#contact-us-modal').empty();	
+			$('#contact-us-modal').append(data);
+			$('#contact-us-modal').fadeIn("slow");
 	});
 });
