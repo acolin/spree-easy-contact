@@ -5,12 +5,8 @@ class ContactsController < Spree::BaseController
     @contact = Contact.new
     
     respond_to do |format|
-      format.html { render :layout => false }
+      format.js
     end
-  end
-  
-  def edit
-    redirect_to new_contact_path
   end
   
   def create
@@ -19,10 +15,8 @@ class ContactsController < Spree::BaseController
       if @contact.valid? &&  @contact.save
         ContactMailer.message_email(@contact).deliver
         format.js
-        format.html { redirect_to(root_path, :notice => t("message_sended")) }
       else
         format.js
-        format.html { render :action => "new" }
       end
     end
   end
