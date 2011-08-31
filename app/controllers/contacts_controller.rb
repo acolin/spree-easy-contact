@@ -3,7 +3,6 @@ class ContactsController < Spree::BaseController
   
   def new
     @contact = Contact.new
-    
     respond_to do |format|
       format.js
     end
@@ -12,12 +11,8 @@ class ContactsController < Spree::BaseController
   def create
     @contact = Contact.new(params[:contact] || {})
     respond_to do |format|
-      if @contact.valid? &&  @contact.save
-        ContactMailer.message_email(@contact).deliver
-        format.js
-      else
-        format.js
-      end
+      ContactMailer.message_email(@contact).deliver if @contact.valid? &&  @contact.save
+      format.js
     end
   end
   
