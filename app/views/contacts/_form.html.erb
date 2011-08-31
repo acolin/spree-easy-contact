@@ -38,7 +38,7 @@
 		<%= @contact.errors.on(:message) unless @contact.errors.on(:message).nil? %>
   </div>
   <div class="form-action">
-		<%= f.submit t("send_message"), :class => "submit-button",  :value => "send" %>
+		<%= f.submit t("send_message"), :disable_with => "Sending..." ,:class => "submit-button",  :value => "send" %>
 	</div>
   <% end %>
 	<a href="#" class="close-reveal-modal">x</a>

@@ -49,54 +49,6 @@
 		cursor: pointer;
 		}
 
-
-/* Contact Us Modal Window */
-
-
-#contact-us {
-    position: absolute;
-    top:0;
-    right:0;
-}
-
-#contact-us-modal {
-    width: 460px;
-}
-
-#contact-us-modal input[type="text"],#contact-us-modal textarea,#contact-us-modal select {
-    display: block;
-}
-
-
-
-
-#contact-us-modal div.form-row {
-    width: 220px;
-    float: left;
-    margin-right: 20px;
-}
-
-#contact-us-modal div.form-row:nth-child(even) {
-    margin-right: 0;
-}
-
-#contact-us-modal input[type="text"] {
-    width: 208px;
-}
-
-#contact-us-modal select {
-    width: 460px;
-}
-
-
-#contact-us-modal textarea {
-    width: 446px;
-}
-
-
-#contact-us-modal div.form-action {
-    margin-top: 15px;
-}
 /*
 		
 	NOTES
