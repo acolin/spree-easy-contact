@@ -3,6 +3,10 @@ class ContactsController < Spree::BaseController
   
   def new
     @contact = Contact.new
+    
+    respond_to do |format|
+      format.html { render :layout => false }
+    end
   end
   
   def edit
