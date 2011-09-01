@@ -7,6 +7,7 @@ class CreateContactTable < ActiveRecord::Migration
       t.string :phone
       t.string :order_number
       t.text :message
+      t.boolean :is_read, :default => false
       t.references :topic
       t.timestamps
     end
