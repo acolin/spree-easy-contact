@@ -28,7 +28,7 @@
       <td class="actions">
         <%= hook :admin_contact_index_row_actions, locals do %>
 					<% unless contact.is_read %>
-						<%= link_to t("mark_as_read"), mark_as_read_contact_path(contact) %>
+						<%= link_to t("mark_as_read"), mark_as_read_admin_contact_path(contact) %>
           <% else %>
 						<%= t("closed") %>
 					<% end %>
