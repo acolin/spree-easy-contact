@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  match '/mark_as_read/:id' => 'contacts#mark_as_read', :as => :contact
+  match '/mark_as_read/:id' => 'contacts#mark_as_read'
   
   resources :contacts, :controller => 'contacts'
   
