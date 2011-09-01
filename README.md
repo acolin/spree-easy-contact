@@ -1,6 +1,8 @@
 SpreeEasyContact
 ================
 
+This forked version implemented a modal contact us form in spree using reveal jquery plugin and jquery notify bar for success message after contact submission.
+
 Easy to implement contact form with honeypot-captcha, with a topic selection management in admin.
 It stores all messages in DB for an easy recall of messages.
 
