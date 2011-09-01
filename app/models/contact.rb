@@ -7,7 +7,7 @@ class Contact < ActiveRecord::Base
   belongs_to :topic
   
   def mark_as_read
-    self.is_read
+    self.is_read = true
     self.save
   end
  
