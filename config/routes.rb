@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  match '/mark_as_read/:id' => 'contacts#mark_as_read'
-  
-  resources :contacts, :controller => 'contacts'
+    
+  resources :contacts, :controller => 'contacts' do
+    get 'mark_as_read', :on => :member
+  end
   
   namespace :admin do
     resources :contacts
