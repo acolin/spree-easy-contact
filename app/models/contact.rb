@@ -5,5 +5,10 @@ class Contact < ActiveRecord::Base
   validates :order_number, :format => {:with => /(^$)|(^R\d{9}$)/i, :message => I18n.t("invalid_order_number")}
   
   belongs_to :topic
+  
+  def mark_as_read
+    self.is_read
+    self.save
+  end
  
 end

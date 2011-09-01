@@ -22,3 +22,5 @@ en:
   new_topic: Add a subject
   from: from
   message_from: Message from
+  mark_as_read: Mark as read
+  closed: closed
