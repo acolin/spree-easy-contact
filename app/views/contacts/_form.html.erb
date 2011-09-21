@@ -7,16 +7,19 @@
     <%= f.text_field :first_name %>
 		<span class="error"><%= @contact.errors.on(:first_name) unless @contact.errors.on(:first_name).nil? %></span>
   </div>
-  <div class="form-row">
+  
+	<div class="form-row">
     <%= f.label :last_name, t("last_name") %><br />
     <%= f.text_field :last_name %>
   	<span class="error"><%= @contact.errors.on(:last_name) unless @contact.errors.on(:last_name).nil? %></span>
 	</div>
+	
   <div class="form-row">
     <%= f.label :email, t("email") %><br />
     <%= f.text_field :email %>
 		<span class="error"><%= @contact.errors.on(:email) unless @contact.errors.on(:email).nil? %></span>
   </div>
+
   <div class="form-row">
     <%= f.label :phone, t("phone") %><br />
     <%= f.text_field :phone %>
