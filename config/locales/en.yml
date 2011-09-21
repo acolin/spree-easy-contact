@@ -1,5 +1,6 @@
 en:
   contacts: Contacts
+  description: Questions? Send us a mail and we'll get back to you really quickly.
   contact_us: Contact us
   first_name: First Name
   last_name: Last Name
@@ -13,7 +14,7 @@ en:
   name_and_mail: Personal info
   contact_details: Contact details
   contact_list: Contacts list
-  send_message: Send message
+  send_message: Send Message
   message_sent: Congrats your Message was sent, we will contact you briefly
   sending: Sending...
   topics: Contact Form Subject
@@ -24,3 +25,4 @@ en:
   message_from: Message from
   mark_as_read: Mark as read
   closed: closed
+  

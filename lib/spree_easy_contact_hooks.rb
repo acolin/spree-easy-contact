@@ -13,7 +13,7 @@ class SpreeEasyContactHooks < Spree::ThemeSupport::HookListener
   end
   
   insert_after :inside_secondary_nav do
-    '<li><a href="#" id="contact-us" data-reveal-id="contact-us-modal"><%= t("contact_us") %></a></li>'
+    '<li><a href="#" id="contact-us" data-reveal-id="contact-us-modal" class="contact-us"><%= t("contact_us") %></a></li>'
   end
   
 end

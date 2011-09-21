@@ -1,26 +1,26 @@
 <h2><%= t("contact_us") %></h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p><%= t("description") %></p>
 
 <%= form_for(@contact, :remote => true, :html => {:honeypot => true}) do |f| %>
   <div class="form-row">
     <%= f.label :first_name, t("first_name") %><br />
     <%= f.text_field :first_name %>
-		<%= @contact.errors.on(:first_name) unless @contact.errors.on(:first_name).nil? %>
+		<span class="error"><%= @contact.errors.on(:first_name) unless @contact.errors.on(:first_name).nil? %></span>
   </div>
   <div class="form-row">
     <%= f.label :last_name, t("last_name") %><br />
     <%= f.text_field :last_name %>
-  	<%= @contact.errors.on(:last_name) unless @contact.errors.on(:last_name).nil? %>
+  	<span class="error"><%= @contact.errors.on(:last_name) unless @contact.errors.on(:last_name).nil? %></span>
 	</div>
   <div class="form-row">
     <%= f.label :email, t("email") %><br />
     <%= f.text_field :email %>
-		<%= @contact.errors.on(:email) unless @contact.errors.on(:email).nil? %>
+		<span class="error"><%= @contact.errors.on(:email) unless @contact.errors.on(:email).nil? %></span>
   </div>
   <div class="form-row">
     <%= f.label :phone, t("phone") %><br />
     <%= f.text_field :phone %>
-		<%= @contact.errors.on(:phone) unless @contact.errors.on(:phone).nil? %>
+		<span class="error"><%= @contact.errors.on(:phone) unless @contact.errors.on(:phone).nil? %></span>
   </div>
 
 	<div class="select-row">
@@ -35,7 +35,7 @@
   <div id="textarea-row">
     <%= f.label :message, t("message") %><br />
     <%= f.text_area :message %>
-		<%= @contact.errors.on(:message) unless @contact.errors.on(:message).nil? %>
+		<span class="error"><%= @contact.errors.on(:message) unless @contact.errors.on(:message).nil? %></span>
   </div>
   <div class="form-action">
 		<%= f.submit t("send_message"), :disable_with => t("sending") ,:class => "submit-button",  :value => "send" %>
