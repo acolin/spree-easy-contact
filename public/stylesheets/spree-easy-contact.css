@@ -24,6 +24,10 @@
  	padding-bottom: 14px;
     margin-bottom: 0;
 }
+
+#contact-us-modal #textarea-row, #contact-us-modal .form-action {
+	float: left;
+}
  
 #contact-us-modal div.form-row:nth-child(even) {
     margin-right: 0;
