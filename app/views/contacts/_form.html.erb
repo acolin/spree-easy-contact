@@ -3,25 +3,25 @@
 
 <%= form_for(@contact, :remote => true, :html => {:honeypot => true}) do |f| %>
   <div class="form-row">
-    <%= f.label :first_name, t("first_name") %><br />
+    <%= f.label :first_name, t("first_name") %>
     <%= f.text_field :first_name %>
 		<span class="error"><%= @contact.errors.on(:first_name) unless @contact.errors.on(:first_name).nil? %></span>
   </div>
   
 	<div class="form-row">
-    <%= f.label :last_name, t("last_name") %><br />
+    <%= f.label :last_name, t("last_name") %>
     <%= f.text_field :last_name %>
   	<span class="error"><%= @contact.errors.on(:last_name) unless @contact.errors.on(:last_name).nil? %></span>
 	</div>
 	
   <div class="form-row">
-    <%= f.label :email, t("email") %><br />
+    <%= f.label :email, t("email") %>
     <%= f.text_field :email %>
 		<span class="error"><%= @contact.errors.on(:email) unless @contact.errors.on(:email).nil? %></span>
   </div>
 
   <div class="form-row">
-    <%= f.label :phone, t("phone") %><br />
+    <%= f.label :phone, t("phone") %>
     <%= f.text_field :phone %>
 		<span class="error"><%= @contact.errors.on(:phone) unless @contact.errors.on(:phone).nil? %></span>
   </div>
@@ -32,12 +32,12 @@
   </div>
 
   <div class="form-row">
-    <%= f.label :order_number, t("order_number") %> (<%= t("optional") %>)<br />
+    <%= f.label :order_number, t("order_number") %> (<%= t("optional") %>)
     <%= f.text_field :order_number %>
   </div>
 
   <div id="textarea-row">
-    <%= f.label :message, t("message") %><br />
+    <%= f.label :message, t("message") %>
     <%= f.text_area :message %>
 		<span class="error"><%= @contact.errors.on(:message) unless @contact.errors.on(:message).nil? %></span>
   </div>
