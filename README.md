@@ -25,8 +25,23 @@ rake db:migrate
 
 Set properly the mail method in the admin area (/admin/mail_methods)
 
+Copy the Spree core/views/layouts/spree_application.html.erb to your application app/views/layouts/spree_application.html.erb
+
+At your copy of spree_application.html.erb replace the following line:
+
+	Remove this line:
+
+	<%= render :partial => 'shared/footer'%>
+
+	Add this lines:
+
+	<%= hook :inside_footer do %>
+		<%= render :partial => 'shared/footer'%>
+	<% end %>
+
+
 And you're done !
 =================
 
 
-Copyright (c) 2011 [Mathias Standaert for Organic Web], released under the New BSD License
+Copyright (c) 2011 [Arnoldo Rodriguez for Incaztech], released under the New BSD License
