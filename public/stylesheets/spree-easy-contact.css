@@ -51,7 +51,8 @@
  
  
 #contact-us-modal textarea {
-    width: 446px;
+  width: 446px;
+	height: 100px;
 	margin-bottom: 2px;
 
 }
