@@ -12,8 +12,8 @@ class SpreeEasyContactHooks < Spree::ThemeSupport::HookListener
     "<%= configurations_menu_item(I18n.t('topics'), admin_topics_path, I18n.t('topics_description')) %>"
   end
   
-  insert_after :inside_secondary_nav do
-    '<li class="contacts-us"><a href="#" id="contact-us" data-reveal-id="contact-us-modal"><%= t("contact_us") %></a></li>'
+  insert_after :outside_footer do
+    '<a href="#" id="contact-us" data-reveal-id="contact-us-modal"><%= t("contact_us") %></a>'
   end
   
 end
