@@ -30,6 +30,7 @@ group :cucumber do
     gem "ruby-debug19"
   end
 end
-gem 'spree', :path => '/Users/arnoldorodriguez/dev/spree'
-gem 'spree_fitscrubs', :path => '/Users/arnoldorodriguez/dev/spree_fitscrubs'
-gem 'spree_easy_contact', :path => '/Users/arnoldorodriguez/dev/spree-easy-contact'
+gem 'spree', :path => 'c:\ror_projects\git_projects\spree'
+gem 'spree_fitscrubs', :path => 'c:\ror_projects\git_projects\spree-fitscrubs'
+gem 'spree_easy_contact', :path => 'C:/ror_projects/git_projects/spree-easy-contact'
+gem 'sqlite3-ruby'
