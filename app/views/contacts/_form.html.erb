@@ -1,6 +1,6 @@
 <h2><%= t("contact_us") %></h2>
 <div id="contact-us-inner">
-   <p><%= t("description") %></p>
+   <p><%= t("contact_us_description") %></p>
    <%= form_for(@contact, :remote => true, :html => {:honeypot => true}) do |f| %>
      <div class="form-row">
        <%= f.label :first_name, t("first_name") %>
