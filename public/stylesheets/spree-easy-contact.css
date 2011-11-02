@@ -50,7 +50,11 @@
 }
  
  
- 
+#contact-us-modal span.req {
+	color: #e5394d;
+	font-weight: bold;
+	display: inline-block;
+}
  
 #contact-us-modal div.form-row {
     width: 220px;
