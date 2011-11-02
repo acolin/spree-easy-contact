@@ -1,6 +1,6 @@
 <h2><%= t("contact_us") %></h2>
 <div id="contact-us-inner">
-   <p><%= t("description") %></p>
+   <p><%= t("contact_us_description") %></p>
    <%= form_for(@contact, :remote => true, :html => {:honeypot => true}) do |f| %>
      <div class="form-row">
        <%= f.label :first_name, t("first_name") %> <span class="req">*</span>
@@ -21,7 +21,7 @@
      </div>
 
      <div class="form-row">
-       <%= f.label :phone, t("phone") %>
+       <%= f.label :phone, t("phone") %> (<%= t("optional") %>)
        <%= f.text_field :phone %>
    		<span class="error"><%= @contact.errors.on(:phone) unless @contact.errors.on(:phone).nil? %></span>
      </div>
