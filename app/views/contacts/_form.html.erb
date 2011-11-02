@@ -21,7 +21,7 @@
      </div>
 
      <div class="form-row">
-       <%= f.label :phone, t("phone") %>
+       <%= f.label :phone, t("phone") %> (<%= t("optional") %>)
        <%= f.text_field :phone %>
    		<span class="error"><%= @contact.errors.on(:phone) unless @contact.errors.on(:phone).nil? %></span>
      </div>
