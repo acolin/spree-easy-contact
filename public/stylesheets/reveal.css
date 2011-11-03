@@ -29,6 +29,7 @@
 		-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
 		-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
 		-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		background-color: #fff;
 		}
 		
 	.reveal-modal.small 		{ width: 200px; margin-left: -140px;}
@@ -64,8 +65,18 @@
 	
 	*/
 	
-	
-	
+
+
 #contact-us-modal {
-	background-color: #fff;
+	background-color: #FAFAFA;
+	width: 540px;
+}
+
+
+#contact-us-modal {
+	padding: 0px;
+}
+
+#contact-us-modal #contact-us-inner {
+	padding: 20px 40px 34px 40px;
 }
