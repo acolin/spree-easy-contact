@@ -159,7 +159,7 @@ div.form-row {
     margin-bottom: 14px;
 }
 
-div.form-row .error {
+div.form-row .error, #textarea-row .error {
     font-size: 12px;
     color: #e5394d;
     background: url(../images/interface/alert-form-icon.png) left 0px no-repeat;
