@@ -6,13 +6,16 @@
 		position: fixed; 
 		height: 100%;
 		width: 100%;
-		background: #000;
 		background: rgba(0,0,0,.8);
 		z-index: 100;
 		display: none;
 		top: 0;
 		left: 0; 
 		}
+		
+	.ie8 .reveal-modal-bg, .ie7 .reveal-modal-bg  {
+		background: url(../images/interface/modal-bg.png) repeat;
+	}
 	
 	.reveal-modal {
 		visibility: hidden;
