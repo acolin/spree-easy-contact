@@ -5,25 +5,25 @@
      <div class="form-row">
        <%= f.label :first_name, t("first_name") %> <span class="req">*</span>
        <%= f.text_field :first_name %>
-   		<%= "<span class='error'> #{@contact.errors.on(:first_name)} </span>" unless @contact.errors.on(:first_name).nil? %>
+   		<%= "<span class='error'> #{@contact.errors.on(:first_name)} </span>".html_safe unless @contact.errors.on(:first_name).nil? %>
      </div>
 
    	<div class="form-row">
        <%= f.label :last_name, t("last_name") %> <span class="req">*</span>
        <%= f.text_field :last_name %>
-     	 <%= "<span class='error'> #{@contact.errors.on(:last_name)} </span>" unless @contact.errors.on(:last_name).nil? %>
+     	 <%= "<span class='error'> #{@contact.errors.on(:last_name)} </span>".html_safe unless @contact.errors.on(:last_name).nil? %>
    	</div>
 
      <div class="form-row">
        <%= f.label :email, t("email") %> <span class="req">*</span>
        <%= f.text_field :email %>
-   		 <%= "<span class='error'> #{@contact.errors.on(:email)} </span>" unless @contact.errors.on(:email).nil? %>
+   		 <%= "<span class='error'> #{@contact.errors.on(:email)} </span>".html_safe unless @contact.errors.on(:email).nil? %>
      </div>
 
      <div class="form-row">
        <%= f.label :phone, t("phone") %> (<%= t("optional") %>)
        <%= f.text_field :phone %>
-   		 <%= "<span class='error'> #{@contact.errors.on(:phone)} </span>" unless @contact.errors.on(:phone).nil? %>
+   		 <%= "<span class='error'> #{@contact.errors.on(:phone)} </span>".html_safe unless @contact.errors.on(:phone).nil? %>
      </div>
 
    	<div class="form-row">
@@ -39,7 +39,7 @@
      <div id="textarea-row">
        <%= f.label :message, t("message") %> <span class="req">*</span>
        <%= f.text_area :message %>
-   		 <%= "<span class='error'> #{@contact.errors.on(:message)} </span>" unless @contact.errors.on(:message).nil? %>
+   		 <%= "<span class='error'> #{@contact.errors.on(:message)} </span>".html_safe unless @contact.errors.on(:message).nil? %>
      </div>
      <div class="form-action">
    		<%= f.submit t("send_message"), :disable_with => t("sending") ,:class => "submit-button" %>
